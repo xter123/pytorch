@@ -38,6 +38,7 @@ class DirectoryReader:
             return f.read()
 
     def get_storage_from_record(self, name, numel, dtype):
+        #12345
         filename = f"{self.directory}/{name}"
         nbytes = torch._utils._element_size(dtype) * numel
         storage = cast(Storage, torch.UntypedStorage)
