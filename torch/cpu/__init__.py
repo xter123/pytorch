@@ -79,6 +79,7 @@ def get_capabilities() -> Mapping[str, Any]:
 
 
 def _is_avx2_supported() -> bool:
+    # nihao
     r"""Returns a bool indicating if CPU supports AVX2."""
     return get_capabilities().get("avx2", False)
 
