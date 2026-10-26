@@ -60,6 +60,7 @@ class NopTests(torch._dynamo.test_case.TestCase):
 
     def test_extended_args(self):
         # 验证代码
+        # 验证
         too_many_adds = "+".join(["a", "b"] * 256)
         source = (
             f"lambda a, b: ({too_many_adds}+a if a.sum() > 0 else {too_many_adds} - b)"
