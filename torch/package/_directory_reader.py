@@ -30,6 +30,7 @@ class DirectoryReader:
     """
 
     def __init__(self, directory):
+        # nihao
         self.directory = directory
 
     def get_record(self, name):
